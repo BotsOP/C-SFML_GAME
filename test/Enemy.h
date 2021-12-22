@@ -32,7 +32,7 @@ public:
 	Enemy(sf::RenderTarget* target);
 	virtual ~Enemy();
 
-	bool checkCollision(Vector2 playerPos, Vector2 playerSize, sf::RenderTarget* target);
+	bool checkCollision(Vector2 playerPos, Vector2 playerSize);
 	void updateEnemy(sf::RenderTarget* target);
 	void renderEnemy(sf::RenderTarget* target);
 	Vector2 getPos();

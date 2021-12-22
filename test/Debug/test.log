@@ -1,25 +1,33 @@
-﻿  Game.cpp
-C:\Users\prutm\source\repos\test\test\Game.cpp(37,31): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
-C:\Users\prutm\source\repos\test\test\Game.cpp(38,30): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
-C:\Users\prutm\source\repos\test\test\Game.cpp(115,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\prutm\source\repos\test\test\Game.cpp(207,84): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+﻿  Enemy.cpp
+  Game.cpp
+C:\Users\prutm\OneDrive\Documents\C-SFML_GAME\test\Game.cpp(37,31): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\prutm\OneDrive\Documents\C-SFML_GAME\test\Game.cpp(38,30): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\prutm\OneDrive\Documents\C-SFML_GAME\test\Game.cpp(115,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\prutm\OneDrive\Documents\C-SFML_GAME\test\Game.cpp(207,84): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\prutm\source\repos\test\test\Game.cpp(207,54): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\prutm\OneDrive\Documents\C-SFML_GAME\test\Game.cpp(207,54): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\prutm\source\repos\test\test\Game.cpp(208,82): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\prutm\OneDrive\Documents\C-SFML_GAME\test\Game.cpp(208,82): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\Users\prutm\source\repos\test\test\Game.cpp(208,56): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\prutm\OneDrive\Documents\C-SFML_GAME\test\Game.cpp(208,56): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-  test.vcxproj -> C:\Users\prutm\source\repos\test\Debug\test.exe
+  Player.cpp
+  main.cpp
+  Vector2.cpp
+C:\Users\prutm\OneDrive\Documents\C-SFML_GAME\test\Vector2.cpp(52,28): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\prutm\OneDrive\Documents\C-SFML_GAME\test\Vector2.cpp(92,15): warning C4552: '-': result of expression not used
+C:\Users\prutm\OneDrive\Documents\C-SFML_GAME\test\Vector2.cpp(93,15): warning C4552: '-': result of expression not used
+  Generating Code...
+  test.vcxproj -> C:\Users\prutm\OneDrive\Documents\C-SFML_GAME\Debug\test.exe

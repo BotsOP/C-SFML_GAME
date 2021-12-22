@@ -11,7 +11,7 @@ void Game::initializeVariables()
 	//Game logic
 	this->endGame = false;
 	this->points = 0;
-	this->health = 10;
+	this->health = 3;
 	this->enemySpawnTimerMax = 90.f;
 	this->enemySpawnTimer = this->enemySpawnTimerMax;
 	this->maxEnemies = 1;
@@ -65,7 +65,7 @@ void Game::updateCollision()
 	for (size_t i = 0; i < enemies.size(); i++)
 	{
 		//Checks if player collides with enemy 
-		if (enemies[i]->checkCollision(player.getPos(), player.getSize(), this->window))
+		if (enemies[i]->checkCollision(player.getPos(), player.getSize()))
 		{
 			this->positiveBeep.play();
 			this->points += 20;
@@ -147,12 +147,6 @@ void Game::pollEvents()
 	}
 }
 
-void Game::updateMousePositions()
-{
-	this->mousePosWindow = sf::Mouse::getPosition(*this->window);
-	this->mousePosView = this->window->mapPixelToCoords(this->mousePosWindow);
-}
-
 //Handles all updates
 void Game::update()
 {
@@ -160,8 +154,6 @@ void Game::update()
 	
 	if (!this->endGame)
 	{
-		this->updateMousePositions();
-
 		this->updateCollision();
 
 		this->spawnEnemy();

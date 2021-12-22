@@ -55,7 +55,7 @@ Enemy::~Enemy()
 	std::cout << "DESTROYED ENEMY\n";
 }
 
-bool Enemy::checkCollision(Vector2 playerPos, Vector2 playerSize, sf::RenderTarget* target)
+bool Enemy::checkCollision(Vector2 playerPos, Vector2 playerSize)
 {
 	return this->pos.checkCollisionRect(this->pos, this->size, playerPos, playerSize);
 }

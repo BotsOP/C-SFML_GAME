@@ -22,10 +22,6 @@ private:
 	sf::VideoMode videoMode;
 	sf::Event ev;
 
-	//Mouse positions
-	sf::Vector2i mousePosWindow;
-	sf::Vector2f mousePosView;
-
 	//Game logic
 	float windowWith;
 	float windowHeight;
@@ -77,7 +73,6 @@ public:
 	void spawnEnemy();
 
 	void pollEvents();
-	void updateMousePositions();
 
 	void update();
 
