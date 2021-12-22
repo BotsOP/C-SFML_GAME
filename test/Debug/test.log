@@ -1,1 +1,25 @@
-﻿  test.vcxproj -> C:\Users\prutm\source\repos\test\Debug\test.exe
+﻿  Game.cpp
+C:\Users\prutm\source\repos\test\test\Game.cpp(37,31): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\prutm\source\repos\test\test\Game.cpp(38,30): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\prutm\source\repos\test\test\Game.cpp(115,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\prutm\source\repos\test\test\Game.cpp(207,84): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\prutm\source\repos\test\test\Game.cpp(207,54): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\prutm\source\repos\test\test\Game.cpp(208,82): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\prutm\source\repos\test\test\Game.cpp(208,56): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+  test.vcxproj -> C:\Users\prutm\source\repos\test\Debug\test.exe

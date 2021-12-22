@@ -7,6 +7,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/System.hpp>
+#include <SFML/Audio.hpp>
 
 #include "Vector2.h"
 #include "Player.h"
@@ -26,6 +27,8 @@ private:
 	sf::Vector2f mousePosView;
 
 	//Game logic
+	float windowWith;
+	float windowHeight;
 	bool endGame;
 	unsigned points;
 	int health;
@@ -35,12 +38,31 @@ private:
 	float playerVelocityX;
 
 	//Game objects
-	std::vector<Enemy> enemies;
+	std::vector<std::unique_ptr<Enemy>> enemies;
 	Player player;
+		//Textures
+	sf::Sprite patrickSprite;
+	sf::Texture patrickTexture;
+	sf::Sprite backgroundSprite;
+	sf::Texture backgroundTexture;
+		//Text
+	sf::Font font;
+	sf::Text pointsText;
+	sf::Text healthText;
+	sf::Text loseText;
+		//Sounds
+	sf::SoundBuffer backgroundMusic;
+	sf::Sound backgroundSound;
+	sf::SoundBuffer positiveSound;
+	sf::Sound positiveBeep;
+	sf::SoundBuffer negativeSound;
+	sf::Sound negativeBeep;
 
 	//private functions
 	void initializeVariables();
 	void initWindow();
+	void initText();
+	void updateCollision();
 
 public:
 	//Constructors / Destructors
@@ -53,7 +75,6 @@ public:
 
 	//Functions
 	void spawnEnemy();
-	float clamp(float, float, float);
 
 	void pollEvents();
 	void updateMousePositions();

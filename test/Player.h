@@ -11,18 +11,25 @@ class Player
 private:
 	sf::RectangleShape rect;
 	Vector2 pos;
+	Vector2 size;
 	float moveSpeed;
+	float moveSpeedIncrease;
+	float moveFriction;
 
-	void initVariables(float xPos, float yPos);
+	void initVariables();
 	void initRect();
 	void moveX(float x);
 	void handleMovement(sf::RenderTarget* target);
+	void setPosition(float x, float y);
 
 public:
-	Player(float x = 500.f, float y = 400.f);
+	Player();
 	virtual ~Player();
 
 	void Update(sf::RenderTarget* target);
 	void Render(sf::RenderTarget* target);
+
+	Vector2 getPos();
+	Vector2 getSize();
 };
 
